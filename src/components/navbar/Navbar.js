@@ -5,6 +5,7 @@ import { useSpring, animated, config } from "react-spring";
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
+import { Icon } from "semantic-ui-react";
 
 const NavBar = styled(animated.nav)`
 	position: fixed;
@@ -56,6 +57,17 @@ const BurgerWrapper = styled.div`
 	}
 `;
 
+const StyledIcon = styled(Icon)``;
+
+const ReStyledIcon = styled(StyledIcon)`
+	&&& {
+		margin-top: 1.5rem;
+		margin-right: 12px;
+		font-size: 2.2rem;
+		color: ${({ theme: { colors } }) => colors.lightgray};
+	}
+`;
+
 const Navbar = (props) => {
 	const barAnimation = useSpring({
 		from: { transform: "translate3d(0, -10rem, 0)" },
@@ -80,6 +92,22 @@ const Navbar = (props) => {
 						<a href="/">Contact</a>
 						<a href="/">Resume</a>
 					</NavLinks>
+					<div>
+						<a
+							href="https://github.com/TrevorLocke"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<ReStyledIcon name="github" />
+						</a>
+						<a
+							href="https://www.linkedin.com/in/trevor-locke-713883101/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<ReStyledIcon name="linkedin" />
+						</a>
+					</div>
 					<BurgerWrapper>
 						<BurgerMenu
 							navbarState={props.navbarState}

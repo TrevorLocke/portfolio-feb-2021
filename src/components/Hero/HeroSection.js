@@ -9,7 +9,7 @@ const HeroSection = () => {
 			<div style={{ backgroundColor: "#2d2f33" }}>
 				<HeroWrapper>
 					<div>
-						<StyledH3>Hi, I'm Trevor! A Front End Developer.</StyledH3>
+						<StyledH3>Hi, I'm Trevor! A Front-End Developer.</StyledH3>
 						<StyledH1>Lets Turn Your Dreams Into Code!</StyledH1>
 						<StyledButton
 							href="add-website-here"
@@ -43,7 +43,7 @@ const StyledButton = styled.button`
 const StyledH1 = styled.h1`
 	font-size: 50px;
 	color: ${({ theme: { colors } }) => colors.offwhite};
-	padding-top: 1.2rem;
+	padding-top: 0.8rem;
 `;
 
 const StyledH3 = styled.h3`
