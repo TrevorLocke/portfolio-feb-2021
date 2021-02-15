@@ -63,11 +63,11 @@ const CollapseMenu = (props) => {
 							Contact
 						</a>
 					</li>
-					{/* <li>
+					<li>
 						<a href="/" onClick={props.handleNavbar}>
-							link n4
+							Resume
 						</a>
-					</li> */}
+					</li>
 				</NavLinks>
 			</CollapseWrapper>
 		);

@@ -11,7 +11,7 @@ const NavBar = styled(animated.nav)`
 	width: 100%;
 	top: 0;
 	left: 0;
-	background: #2d2f33;
+	background: ${({ theme: { colors } }) => colors.darkgray};
 	z-index: 1;
 	font-size: 1.4rem;
 `;
@@ -31,7 +31,7 @@ const NavLinks = styled(animated.ul)`
 	margin: auto 0;
 
 	& a {
-		color: #dfe6e9;
+		color: ${({ theme: { colors } }) => colors.offwhite};
 		text-transform: uppercase;
 		font-weight: 600;
 		border-bottom: 1px solid transparent;
@@ -40,8 +40,8 @@ const NavLinks = styled(animated.ul)`
 		text-decoration: none;
 		cursor: pointer;
 		&:hover {
-			color: #fdcb6e;
-			border-bottom: 1px solid #fdcb6e;
+			color: ${({ theme: { colors } }) => colors.lightblue};
+			border-bottom: 1px solid ${({ theme: { colors } }) => colors.lightblue};
 		}
 		@media (max-width: 768px) {
 			display: none;
@@ -78,7 +78,7 @@ const Navbar = (props) => {
 						<a href="/">About</a>
 						<a href="/">Projects</a>
 						<a href="/">Contact</a>
-						{/* <a href="/">link n4</a> */}
+						<a href="/">Resume</a>
 					</NavLinks>
 					<BurgerWrapper>
 						<BurgerMenu
