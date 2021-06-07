@@ -6,13 +6,14 @@ const theme = {
 		offwhite: "#dfe6e9",
 		lightgray: "#b6b6b6",
 		lightblue: "#1BC0EC",
-		darkgray: "#2d2f33",
+		darkgray: "#25272B",
+		mediumgray: "#2D2F33",
 	},
 	fonts: ["sans-serif", "Roboto"],
 	fontSizes: {
 		small: "1em",
-		medium: "2em",
-		large: "3em",
+		medium: "1.62em",
+		large: "2.62em",
 	},
 };
 
