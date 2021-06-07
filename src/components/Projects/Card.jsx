@@ -8,7 +8,7 @@ const Card = () => {
 			<StyledA href="#">
 				<Wrapper>
 					<ProjectSummary>
-						<ProjectTitle>Poject 1</ProjectTitle>
+						<ProjectTitle>Project</ProjectTitle>
 						<ProjectDesc>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odit
 							ab excepturi illum accusantium explicabo voluptatibus atque
