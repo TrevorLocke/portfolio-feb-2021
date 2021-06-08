@@ -18,7 +18,7 @@ const AboutSection = () => {
 					<StyledH3>Every great site has a even better story</StyledH3>
 
 					<StyledP>
-						I'm an infinitely curious JavaScript developer with a passion for
+						I'm an infinitely curious JavaScript developer with a passion for turning
 						ideas into functional websites.
 						<br />
 						<br />
