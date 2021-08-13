@@ -29,6 +29,7 @@ class App extends Component {
 					navbarState={this.state.navbarOpen}
 					handleNavbar={this.handleNavbar}
 				/>
+				<h1>hi from ipad</h1>
 				<HeroSection height="100vh" parallax textPosition="center" />
 				<GlobalStyle />
 				<AboutSection />
